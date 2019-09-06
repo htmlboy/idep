@@ -1,0 +1,17 @@
+.header
+  %h1 Software web
+  %p Presentaciones y recursos sobre diseño web por <a href="http://javierusobiaga.com" target="_blank">Javier&nbsp;Usobiaga</a>.
+
+  %nav.nav
+    - if !current_page.data.menuActive
+      %a.is-active(href="/index.html")
+        Presentaciones
+    - else
+      %a(href="/index.html")
+        Presentaciones
+    - if current_page.data.menuActive == "resources"
+      %a.is-active(href="/resources.html")
+        Recursos
+    - else
+      %a(href="/resources.html")
+        Recursos
