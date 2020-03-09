@@ -1,0 +1,69 @@
+---
+title: Git, GitHub y Netlify
+layout: layout-slides
+---
+
+%section
+  %h1 Git, GitHub & Netlify
+%section
+  %p.note
+    Los desarrolladores suelen trabajar con repositorios de código centralizados
+    y software de control de versiones. Estos repositorios permiten a los desarrolladores
+    trabajar a la vez en el mismo proyecto, creando versiones&nbsp;paralelas.
+  %p.note
+    El software más popular de control de versiones es
+    <a href="https://git-scm.com/" target="_blank">Git</a>.
+%section
+  %p.note
+    Las versiones de código en Git se llaman <i>ramas</i>. La rama principal o la
+    versión más estable del código se llama <code>master</code>.
+  %p.note
+    Los desarrolladores de software suelen crear un duplicado de esta rama como una
+    nueva rama, alicar cambios o crear nuevas funcionalidades, y una vez esta rama
+    es estable, la fusionan con la rama <code>master</code>.
+
+%section
+  %p.note
+    En Git los cambios tienen diferentes estados: pueden estar en la rama <code>master</code>
+    o en otra rama; y pueden estar solo en nuestro ordenador, o subidos al servidor
+    que gestiona las versiones del código.
+
+%section
+  %p.note
+    El servicio de servidor de control de versiones más popular <a href="https://github.com">GitHub</a>,
+    y se puede crear una cuenta de forma gratuita.
+  %p.note
+    Para la interacción con Git y la sincronización con GitHub se usa habitualmente
+    la Terminal, pero la forma más sencilla de empezar a usarlo es una interfaz gráfica
+    como <a href="https://desktop.github.com/" target="_blank">GitHub&nbsp;Desktop</a>.
+
+%section
+  %h3 Pasos para crear un nuevo repositorio
+  %ol.note
+    %li.fragment Entra en tu cuenta de GitHub y haz click en ˝New˝.
+    %li.fragment Añade un nombre (sin espacios o caracteres especiales).
+    %li.fragment Márcalo como Public (si quieres que lo puedan ver otros usuarios) o Private.
+    %li.fragment Haz click en ˝Create repository˝.
+    %li.fragment Accede al nuevo repositorio, click en ˝Clone or download˝ y selecciona ˝Open in Desktop˝.
+    %li.fragment Selecciona la ruta local en la que se guardará la copia en tu ordenador.
+
+%section
+  %h3 Pasos para añadir cambios (rama master)
+  %ol.note
+    %li.fragment Abre tu versión local del repositorio en el editor de código.
+    %li.fragment Haz cambios y guárdalos.
+    %li.fragment En GitHub Desktop, crea un Commit (un paquete de cambios) con una descripción de los cambios.
+    %li.fragment Haz click en ˝Commit to master˝
+    %li.fragment Haz click en ˝Push origin˝ cuando quieras subir los cambios al servidor.
+    %li.fragment Y en caso de que no sepas si tienes la última versión del código, puedes descargarla haciendo click en ˝Fetch origin˝.
+
+%section
+  %p.note
+    Para publicar un sitio web, puedes alquilar un espacio en un servicio de hosting,
+    subir los archivos de tu web con un programa FTP(uno popular y gratuito es
+    <a href="https://filezilla-project.org/" target="_blank">FileZilla</a>) y
+    vincular to dominio al servicio de&nbsp;hosting.
+  %p.note.fragment
+    Pero otro servicio que puedes usar es
+    <a href="https://www.netlify.com/" target="_blank">Netlify</a>, que puede subir
+    el contenido directamente desde tu cuenta de GitHub y el servicio más básico es gratuito.
