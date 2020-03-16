@@ -1,0 +1,120 @@
+---
+title: Formularios
+layout: layout-slides
+---
+
+%section
+  %h1 Formularios
+
+%section
+  %pre
+    %code.html
+      &lt;form method="post" action="…"&gt;
+      …
+      &lt;/form&gt;
+  %p.note
+    La etiqueta <code>&lt;form&gt;</code> engloba a un conjunto de campos editables
+    que se enviarán al servidor para su procesado.
+  %p.note.fragment
+    El atributo <code>method</code> hace referencia al método de envío de los datos.
+    Casi siempre es <code>post</code>.
+  %p.note.fragment
+    El atributo <code>action</code> hace referencia al archivo que procesará los
+    datos, por ejemplo, un archivo PHP llamado <i>contact.php</i>.
+%section
+  %pre
+    %code
+      :preserve
+        &lt;form method="post" action="…"&gt;
+          &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+          &lt;input type="text" id="nombre"&gt;
+        &lt;/form&gt;
+  %p.note
+    El tipo de campo más habitual es el <code>input</code>, y <code>type</code>
+    indica su tipo. Podemos asociar una etiqueta <code>label</code> mediante los
+    atributos <code>for</code> e <code>id</code> respectivamente.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;form method="post" action="…"&gt;
+          &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+          &lt;input type="text" id="nombre"&gt;
+          &lt;input type="submit" value="Enviar"&gt;
+        &lt;/form&gt;
+  %p.note
+    Un formulario necesita un elemento que al accionarlo envíe el formulario.
+    Este elemento puede ser un<br>
+    <code>&lt;input type="submit" value="Enviar"&gt;</code>
+    <br>o bien un<br>
+    <code>&lt;button type="submit"&gt;Enviar&lt;button&gt;</code>.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;input type="…"&gt;
+
+  %p.note
+    Un <code>input</code> puede ser de tipo <code>text</code>, <code>password</code>,
+    <code>file</code>, <code>checkbox</code>, <code>radio</code> o <code>submit</code>,
+    entre otros.
+%section
+  %pre
+    %code
+      :preserve
+        &lt;select&gt;
+          &lt;option value="valor1"&gt;Valor 1&lt;/option&gt;
+          &lt;option value="valor2"&gt;Valor 2&lt;/option&gt;
+          &lt;option value="valor3"&gt;Valor 3&lt;/option&gt;
+        &lt;/select&gt;
+
+  %p.note
+    Un <code>select</code> permite seleccionar entre varias opciones, marcadas como
+    <code>option</code> cada una de ellas.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;textarea rows="20" cols="50"&gt;&lt;/textarea&gt;
+
+  %p.note
+    Un textarea permite texto multilínea. Podemos definir sus dimensiones iniciales
+    con <code>rows</code> y <code>cols</code>.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;label&gt;
+          &lt;input type="radio" name="tipo-envio" &gt; Opción A
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type="radio" name="tipo-envio" &gt; Opción B
+        &lt;/label&gt;
+        &lt;label&gt;
+          &lt;input type="radio" name="tipo-envio" &gt; Opción C
+        &lt;/label&gt;
+  %p.note
+    Un conjunto de <code>input</code> con <code>type="radio"</code> se seleccionan
+    de forma alterna si tienen un mismo atributo <code>name</code>.
+  %p.note
+    Una forma alternativa de vincular <code>label</code> e <code>input</code> es
+    meter el <code>input</code> dentro del <code>label</code>.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="poJVQpW" data-default-tab="html,result" data-user="htmlboy")
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank")
+      Los formularios en MDN
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms" target="_blank")
+      Dar estilos a los formularios
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling" target="_blank")
+      Estilos avanzados de formularios
