@@ -1,0 +1,78 @@
+---
+title: Tablas
+layout: layout-slides
+---
+
+%section
+  %h1 Tablas
+
+%section
+  %p.note
+    Las tablas permiten presentar datos que pueden ser comparados y organizados en filas y columnas.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ExjebyZ" data-default-tab="html,result" data-user="htmlboy")
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              &lt;th&gt;Encabezado 1&lt;/th&gt;
+              &lt;th&gt;Encabezado 2&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;th&gt;Contenido 1&lt;/th&gt;
+              &lt;th&gt;Contenido 2&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+  %p.note
+    Todas las celdas de una misma fila van dentro de un <code>tr</code> (<i>table row</i>).
+    Las celdas de encabezado (normalmente <code>th</code>) van dentro del <code>thead</code>,
+    mientras que las celdas de contenido van dentro de un <code>tbody</code>.
+
+%section
+  %pre
+    %code
+      :preserve
+        &lt;table&gt;
+          &lt;thead&gt;
+            &lt;tr&gt;
+              …
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            …
+          &lt;/tbody&gt;
+          &lt;tfoot&gt;
+            …
+          &lt;/tfoot&gt;
+        &lt;/table&gt;
+  %p.note
+    Opcionalmente, podemos añadir celdas de pie de tabla dentro de un <code>tfoot</code>.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="abOaEoG" data-default-tab="html,result" data-user="htmlboy")
+  %p.note
+    El número de celdas en cada fila debería ser el mismo. Sin embargo, podemos hacer
+    que una celda ocupe más filas o más columnas con <code>rowspan</code> o <code>colspan</code>.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="XWbPzgp" data-default-tab="html,result" data-user="htmlboy")
+  %p.note
+    La forma más simple de adaptar una tabla a pantalla pequeña es meterla en un
+    <code>div</code> que tenga un <code>overflow:auto</code>
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank")
+      Las tablas en MDN
+  %p.note
+    %a(href="https://css-tricks.com/responsive-data-table-roundup/" target="_blank")
+      Soluciones responsive avanzadas
