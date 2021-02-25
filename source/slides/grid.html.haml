@@ -1,0 +1,45 @@
+---
+title: Grid
+layout: layout-slides
+---
+
+%section
+  %h1 Grid
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="ExNoqbE" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Si asignamos la propiedad <code>display: grid</code> a un elemento,
+    se convierte en un espacio grid, y sus descendientes directos tienden a
+    alinearse sobre la retícula que definamos.
+
+%section
+  %p.note
+    Podemos definir las columnas de la retícula con
+    <code>grid-template-columns</code> y los tamaños de las columnas separados
+    por espacios. La unidad <code>fr</code> indica una fracción del espacio disponible.
+  %p.note
+    Podemos definir el espaciado entre columnas y filas con <code>grid-gap</code>.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="abBqbBN" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos definir las filas de la retícula con
+    <code>grid-template-rows</code> y definir el tamaño de las filas adicionales
+    con <code>grid-auto-rows</code>.
+
+%section
+  .codepen(data-height="400" data-editable="true" data-theme-id="0" data-slug-hash="XWNZWMm" data-default-tab="css,result" data-user="htmlboy")
+  %p.note
+    Podemos indicar la columna en la que empieza un elemento y en cuál que acaba con
+    <code>grid-column</code> y los dos valores separados por <code>/</code>. Se
+    puede hacer lo mismo para las filas con <code>grid-row</code>.
+
+
+%section
+  %h2 Más información
+  %p.note
+    %a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank")
+      Grid en MDN
+  %p.note
+    %a(href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank")
+      Grid en CSS Tricks
